@@ -52,10 +52,7 @@ export const NavBar = () => {
 
         <NavbarContent justify='end'>
           <NavbarItem>
-            <SingleSelectionDropDown
-              items={groups}
-              selected='CVグループ1'
-            ></SingleSelectionDropDown>
+            <SingleSelectionDropDown items={groups} selected='CVグループ'></SingleSelectionDropDown>
           </NavbarItem>
         </NavbarContent>
       </Navbar>
