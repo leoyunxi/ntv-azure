@@ -65,7 +65,7 @@ export default function Home() {
       const deserializedData = JSON.parse(serializedData);
       dispatch(setSearchResults(deserializedData));
     }
-  }, []);
+  });
 
   const searchByMaterialInfo = (data: any[], conditions: SearchConditions): any[] => {
     conditions.recordStartTimeStart = isDateSelected ? conditions.recordStartTimeStart : '';

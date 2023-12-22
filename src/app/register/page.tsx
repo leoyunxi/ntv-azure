@@ -109,7 +109,7 @@ const RegisterPage = () => {
         onOpen();
       }
     }
-  }, [materialData]);
+  });
 
   return (
     <>

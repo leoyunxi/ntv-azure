@@ -35,7 +35,7 @@ export const NavBar = () => {
         </NavbarBrand>
         <NavbarContent className='hidden sm:flex gap-6' justify='center'>
           {links.map(link => (
-            <NavbarItem>
+            <NavbarItem key={link.href}>
               <Link
                 key={link.href}
                 href={link.href}
