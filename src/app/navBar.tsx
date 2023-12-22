@@ -19,7 +19,7 @@ export const NavBar = () => {
     { lable: 'オーダー一覧', href: '/order' },
   ];
 
-  const groups = ['CVグループ1', 'CVグループ2', 'CVグループ3'];
+  const groups = ['報道', 'バンキシャ', 'ZIP', 'CV'];
 
   return (
     <>
