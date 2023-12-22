@@ -1,11 +1,10 @@
 'use client';
 
-import React from 'react';
-import { PiTelevisionDuotone } from 'react-icons/pi';
+import SingleSelectionDropDown from '@/component/singleSelectionDropDown';
+import { Link, Navbar, NavbarBrand, NavbarContent, NavbarItem } from '@nextui-org/react';
 import classnames from 'classnames';
 import { usePathname } from 'next/navigation';
-import SingleSelectionDropDown from '@/component/singleSelectionDropDown';
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from '@nextui-org/react';
+import { PiTelevisionDuotone } from 'react-icons/pi';
 
 export const NavBar = () => {
   const currentPath = usePathname();

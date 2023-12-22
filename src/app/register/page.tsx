@@ -1,4 +1,7 @@
 'use client';
+import FileDropzone from '@/component/fileDropZone';
+import { categorys, genres, programNames } from '@/constant/conditionList';
+import { setSearchResults } from '@/redux/features/searchResult/searchResultsSlice';
 import {
   Button,
   Input,
@@ -11,19 +14,12 @@ import {
   SelectItem,
   useDisclosure,
 } from '@nextui-org/react';
-import { Card } from '@tremor/react';
-import { Flex } from '@tremor/react';
-import React, { useCallback, useState } from 'react';
-import { genres, programNames, categorys } from '@/constant/conditionList';
-import { ZodError, z } from 'zod';
+import { Card, Flex } from '@tremor/react';
 import { format } from 'date-fns';
-import { v4 as uuidv4 } from 'uuid';
-import { setSearchResults } from '@/redux/features/searchResult/searchResultsSlice';
+import { useCallback, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import Dropzone from '@/component/dropZone';
-import { FileDrop } from '@/component/fileDrop';
-import FileUploader from '@/component/fileDropZone';
-import FileDropzone from '@/component/fileDropZone';
+import { v4 as uuidv4 } from 'uuid';
+import { ZodError, z } from 'zod';
 
 type MaterialData = {
   id: string;

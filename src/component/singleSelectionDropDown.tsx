@@ -1,8 +1,8 @@
 'use client';
 
-import React from 'react';
-import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from '@nextui-org/react';
+import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger } from '@nextui-org/react';
 import { CaretDownIcon } from '@radix-ui/react-icons';
+import React from 'react';
 
 type Props = {
   selected: string;
@@ -21,16 +21,16 @@ const SingleSelectionDropDown = ({ selected, items, onSelected }: Props) => {
   return (
     <Dropdown>
       <DropdownTrigger>
-        <Button variant="bordered" className="capitalize">
+        <Button variant='bordered' className='capitalize'>
           {selectedValue}
-          <CaretDownIcon width="16" height="16" />
+          <CaretDownIcon width='16' height='16' />
         </Button>
       </DropdownTrigger>
       <DropdownMenu
-        aria-label="Single selection"
-        variant="flat"
+        aria-label='Single selection'
+        variant='flat'
         disallowEmptySelection
-        selectionMode="single"
+        selectionMode='single'
         selectedKeys={selectedKeys}
         onSelectionChange={setSelectedKeys}
         onAction={onSelected}

@@ -3,7 +3,6 @@ import {
   ExtFile,
   FileCard,
   FileInputButton,
-  FileMosaic,
   FileMosaicProps,
   FullScreen,
   ImagePreview,

@@ -1,12 +1,11 @@
 import '@radix-ui/themes/styles.css';
-import './theme-config.css';
-import './globals.css';
-import { Theme, ThemePanel } from '@radix-ui/themes';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { NavBar } from './navBar';
-import { UiProvider } from './UiProviders';
 import { StoreProvider } from './StoreProvider';
+import { UiProvider } from './UiProviders';
+import './globals.css';
+import { NavBar } from './navBar';
+import './theme-config.css';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -23,9 +22,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <UiProvider>
             <NavBar></NavBar>
             <main className='p-3'>{children}</main>
-            {/* <Theme appearance="light" accentColor="blue" radius="large"> */}
-            {/* <ThemePanel></ThemePanel> */}
-            {/* </Theme> */}
           </UiProvider>
         </StoreProvider>
       </body>

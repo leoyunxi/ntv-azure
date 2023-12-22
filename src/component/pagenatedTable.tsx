@@ -1,18 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import {
-  Table,
-  TableHeader,
-  TableColumn,
-  TableBody,
-  TableRow,
-  TableCell,
+  Image,
   Pagination,
-  getKeyValue,
-  Button,
+  Table,
+  TableBody,
+  TableCell,
+  TableColumn,
+  TableHeader,
+  TableRow,
 } from '@nextui-org/react';
-import data from '@/constant/data';
-import { Image } from '@nextui-org/react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 
 const PagenatedTable = () => {
