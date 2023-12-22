@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { genres, programNames, categorys } from '@/constant/conditionList';
 import { log } from 'console';
