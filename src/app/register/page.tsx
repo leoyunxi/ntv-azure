@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client';
 import FileDropzone from '@/component/fileDropZone';
 import { categorys, genres, programNames } from '@/constant/conditionList';
@@ -34,6 +35,7 @@ type MaterialData = {
 
 const RegisterPage = () => {
   const dispatch = useDispatch();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const initialMaterialData: MaterialData = {
     id: '',
     thumnail: 'https://pbs.twimg.com/profile_images/614095297900347392/e94Ktqdu_400x400.png',

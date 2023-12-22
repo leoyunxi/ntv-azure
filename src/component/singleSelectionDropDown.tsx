@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client';
 
 import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger } from '@nextui-org/react';

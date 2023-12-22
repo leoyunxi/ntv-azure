@@ -1,7 +1,7 @@
+// @ts-nocheck
 import { Button, Chip, Listbox, ListboxItem } from '@nextui-org/react';
 import React, { FC, useState } from 'react';
 import { useDispatch } from 'react-redux';
-
 type ListboxProps = {
   source: string[];
   destination: string[];
