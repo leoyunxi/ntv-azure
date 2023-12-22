@@ -105,7 +105,7 @@ const RegisterPage = () => {
         onOpen();
       }
     }
-  });
+  }, [dispatch, initialMaterialData, materialData, onOpen, schema]);
 
   return (
     <>
