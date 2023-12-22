@@ -58,7 +58,7 @@ const RegisterPage = () => {
   const [isSuccess, setIsSuccess] = useState<boolean>(false);
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
-  const handleInputChange = (key: keyof MaterialData, value: string) => {
+  const handleInputChange = (key: keyof MaterialData, value: string | any) => {
     const selectedValue = typeof value === 'string' ? value : value?.target?.value;
 
     setMaterialData(prevData => ({
