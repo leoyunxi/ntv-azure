@@ -14,10 +14,11 @@ jobs:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
     name: Build and Deploy Job
+    env:
+      NODE_VERSION: 18
     steps:
       - uses: actions/checkout@v3
         with:
-          node-version: 18.17.0
           submodules: true
           lfs: false
       - name: Build And Deploy
