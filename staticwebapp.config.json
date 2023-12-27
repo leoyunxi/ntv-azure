@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "methods": ["PUT", "POST", "DELETE"],
+      "allowedRoles": ["authenticated"]
+    }
+  ]
+}
